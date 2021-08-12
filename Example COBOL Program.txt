@@ -1,0 +1,28 @@
+
+IDENTIFICATION DIVISION.
+PROGRAM-ID. // Program name goes here
+AUTHOR. // Authors name goes here
+DATE-WRITTEN. // Date goes here
+ENVIRONMENT DIVISION.
+
+DATA DIVISION.
+FILE SECTION.
+WORKING-STORAGE SECTION.
+// Variables go here, example below:
+01 UserName PIC X(30) VALUE "BenMcleod"
+01 Age PIC 99 VALUE ZEROS.
+01 Address.
+	02 HouseNo PIC 9999.
+	02 AddressLine1 PIC X(100).
+	02 PostCode PIC X(10).
+01 PiValue CONSTANT AS 3.14. // Example of a constant
+
+
+PROCEDURE DIVISION.
+// Code goes here
+
+DISPLAY "What is your username? " 
+ACCEPT UserName
+DISPLAY "Hello " UserName
+
+STOP RUN.
